@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Modals | Hyper - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+    </head>
+
+    <body class="loading" data-layout="detached" data-layout-config='{"leftSidebarCondensed":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+
+     
+        
+        <!-- Start Content-->
+        <div class="container-fluid">
+
+            <!-- Begin page -->
+            <div class="wrapper">
+
+                
+
+                <div class="content-page">
+                    <div class="content">
+                        
+                       
+                                        <div class="tab-content">
+                                            <!-- Warning Alert Modal -->
+                                            <div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body p-4">
+                                                            <div >
+                                                                <i class="dripicons-warning h1 text-warning"></i>
+                                                                <h4 class="mt-2">A/S정보 입력하기 </h4>
+                                                              
+
+                                                                <form class="pl-3 pr-3 mt-4" action="#">
+        
+                                                                <div class="form-group">
+                                                                    <label for="username">일자</label>
+                                                                    <input class="form-control" type="date" id="year"" required="">
+                                                                
+                                                                </div>
+        
+                                                                <div class="form-group">
+                                                                    <label for="emailaddress">내용</label>
+                                                                    <input class="form-control" type="text" id="emailaddress" required="" placeholder="에러내용을 입력하세요">
+                                                                </div>
+        
+                                                                <div class="form-group">
+                                                                    <label for="password">연락처 </label>
+                                                                    <input class="form-control" type="password" required="" id="contact" placeholder="A/S관련자 연락처를 입력하세요!">
+                                                                </div>
+        
+                                                                <div class="form-group text-right mt-4">
+                                                                    <button class="btn btn-primary" type="submit">저장하기</button>
+                                                                    <button class="btn btn-primary" data-dismiss="modal" >종료</button>
+                                                                </div>
+        
+                                                            </form>
+        
+                                                        </div>
+                                                          
+                                                         </div>
+                                                    </div><!-- /.modal-content -->
+                                                </div><!-- /.modal-dialog -->
+                                            </div><!-- /.modal -->
+                                                <!-- Warning Alert Modal -->
+                                                <div id="alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body p-4">
+                                                                <div >
+                                                                    <i class="dripicons-warning h1 text-warning"></i>
+                                                                    <h4 class="mt-2">A/S정보보기 </h4>
+
+                                                                    <div class="row mb-4">
+                                                                            <form class="form-inline mt-4 text-right">
+                                                                                
+                                                                                <!-- <div class="form-group mx-sm-3 mb-2">
+                                                                                   <select class="custom-select" id="status-select">
+                                                                                        <option selected>기간선택...</option>
+                                                                                        <option value="1">년간</option>
+                                                                                        <option value="2">월간</option>
+                                                                                        <option value="3">주간</option>
+                                                                                    </select>
+                                                                                </div> -->
+                                                                                <div class="form-group mb-0">
+                                                                                    <input type="date" class="form-control mr-1" id="date" placeholder="날짜 선택">
+                                                                                    <!-- <input type="search" class="form-control mr-1" id="content" placeholder="검색할 내용을 입력하세요! "> -->
+                                                                                    <button type="button" class="btn btn-danger"> 검색</button>
+                                                                                </div>
+                                                                            </form>  
+                                                                    </div>
+                                                                
+
+                                                                    <table class="table table-sm table-centered mb-0 mt-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>일자</th>
+                                                                                <th>내용</th>
+                                                                                <th>연락처</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>2020-11-27</td>
+                                                                                <td>인버터 에러</td>
+                                                                                <td>010-2789-4561</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2020-11-27</td>
+                                                                                <td>인버터 에러</td>
+                                                                                <td>010-2789-4561</td>
+                                                                            </tr> <tr>
+                                                                                <td>2020-11-27</td>
+                                                                                <td>인버터 에러</td>
+                                                                                <td>010-2789-4561</td>
+                                                                            </tr> <tr>
+                                                                                <td>2020-11-27</td>
+                                                                                <td>인버터 에러</td>
+                                                                                <td>010-2789-4561</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+
+                                                                    
+            
+                                                            </div>
+                                                              
+                                                             </div>
+                                                        </div><!-- /.modal-content -->
+                                                    </div><!-- /.modal-dialog -->
+                                                </div><!-- /.modal -->
+        
+                                                
+        
+                                                
+                                                    <!-- Warning Alert modal -->
+                                                    <a   class="btn btn-warning" data-toggle="modal" data-target="#alert-modal">A/S정보입력/보기</a>
+                                                    <a   class="btn btn-warning" data-toggle="modal" data-target="#warning-alert-modal">A/S정보입력/보기</a>
+                                                   
+                                                
+                                            </div> <!-- end preview-->
+                                        
+                                            
+                                        </div> <!-- end tab-content-->
+                                    
+
+       
+
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>
+
