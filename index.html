@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hyper - Responsive Bootstrap 4 Admin Dashboard</title>
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+      
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        
+    </head>
+
+    <body class="loading" data-layout="detached" data-layout-config='{"leftSidebarCondensed":true,"darkMode":true, "showRightSidebarOnStart": true}'>
+
+       <!-- Topbar Start -->
+       <div class="navbar-custom topnav-navbar topnav-navbar-dark">
+        <div class="container-fluid">
+
+            <!-- LOGO -->
+            <a href="http://www.cosmoamt.com" class="topnav-logo">
+                <span class="topnav-logo-lg">
+                    <img src="img/logo.jpg" height="70">
+                </span>
+                <span class="topnav-logo-sm">
+                    <img src="assets/images/logo_sm.png" alt="" height="16">
+                </span>
+            </a>
+            
+            <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" id="topbar-userdrop" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="account-user-avatar"> 
+                            <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                        </span>
+                        <span>
+                            <span class="account-user-name">COSMO</span>
+                            <span class="account-position">administer</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown" aria-labelledby="topbar-userdrop">
+                        <!-- item-->
+                        <div class=" dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome !</h6>
+                        </div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item" data-toggle="modal" data-target="#warning-alert-modal">
+                            <i class="mdi mdi-account-edit mr-1"></i>
+                            <span> A/S정보보기 </span>
+                        </a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item" data-toggle="modal" data-target="#warning-alert-modal">
+                            <i class="mdi mdi-account-edit mr-1"></i>
+                            <span> A/S정보입력하기 </span>
+                        </a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="mdi mdi-logout mr-1"></i>
+                            <span>로그아웃</span>
+                        </a>
+                    </div>
+                </li>
+               
+            </ul>
+              
+            <ul class="list-unstyled topbar-right-menu float-right mt-4 text-white">
+                <li style="height: 34px; border-bottom: 4px solid #727cf5;"> <a class="h4 mr-3 ml-3 text-white" href="index.html">Main</a></li>
+                <li ><a class="h4 mr-3 ml-3 text-white" href="overview.html">Overview</a></li>
+                <li ><a class="h4 mr-4 ml-3 text-white" href="dashboard_all.html">DashBoard</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end Topbar -->
+        
+        <!-- Start Content-->
+        <div class="container-fluid">
+
+            <!-- Begin page -->
+            <div class="wrapper">
+
+                <!-- ========== Left Sidebar Start ========== -->
+               
+                <div class="content-page">
+                    <div class="content">
+                        <div class="row mt-2">
+                            
+                           <div class="col-lg-6">
+                                <div class="card" style="height: 97.5%;">
+                                    <h3 class="header-title m-3">사업장 보기</h3>
+                                     <div class="card-body">
+                                       
+
+                                        <div class="chart-content-bg mt-3">
+                                            <div class="row text-center h-100">
+                                                <div class="col-md-12">
+                                                    <img src="img/123123123.jpg" style="object-fit: contain;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+
+                                       
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+
+                            
+                            <div class="col-xl-6 col-lg-6">
+
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="card widget-flat">
+                                            <h5 class="font-weight-normal mt-3 ml-3" title="Number of Customers">코스모신소재 전경사진</h5>
+                                            <div class="card-body" style="margin-top: -15px;">
+                                                
+                                                <div style="height: 280px;width:100%;background-image: url('img/main_img_7.jpg');background-size: cover;background-repeat: no-repeat;">
+                                                    
+                                                </div>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                               
+                                                <div class="card widget-flat">
+                                                    <div class="card-body bg-primary">
+                                                        <div class="float-right">
+                                                            <i class="mdi mdi-white-balance-sunny widget-icon bg-info rounded-circle text-white"></i>
+                                                        </div>
+                                                        <h5 class="text-white font-weight-normal mt-0" title="Revenue">현재 발전량</h5>
+                                                        <h3 class="mt-2 mb-0 text-white">6,254kW</h3>
+                                                        <p class="mb-0 mt-1 text-muted">
+                                                            <span class="badge badge-info">
+                                                                <i class="mdi mdi-arrow-down-bold"></i> 7.00%</span>
+                                                            <span class="text-white">전날대비</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card widget-flat">
+                                                    <div class="card-body">
+                                                        <div class="float-right">
+                                                            <i class="mdi mdi-sort-calendar-descending widget-icon bg-danger rounded-circle text-white"></i>
+                                                        </div>
+                                                        <h5 class="text-muted font-weight-normal mt-0" title="Revenue">년간 발전량</h5>
+                                                        <h3 class="mt-3 mb-1">6,254kW</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                               
+                                                
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="card widget-flat">
+                                                    <div class="card-body">
+                                                        <div class="float-right">
+                                                            <i class="mdi mdi-sort-clock-descending-outline widget-icon bg-danger rounded-circle text-white"></i>
+                                                        </div>
+                                                        <h5 class="text-muted font-weight-normal mt-0 mb-1" title="Revenue">일간 발전량</h5>
+                                                        <h3 class="mt-3 mb-2">6,254kW</h3>
+                                                        
+                                                    </div>
+                                                </div>
+
+                                                <div class="card widget-flat">
+                                                    <div class="card-body">
+                                                        <div class="float-right">
+                                                            <i class="mdi mdi-molecule-co2 widget-icon bg-danger rounded-circle text-white"></i>
+                                                        </div>
+                                                        <h5 class="text-muted font-weight-normal mt-0" title="Revenue">CO2 저감량</h5>
+                                                        <h3 class="mt-3 mb-1">6,254kW</h3>
+                                                        
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>   
+                                        
+                                    </div> <!-- end col-->
+
+                                    <div class="col-lg-5">
+                                        <div class="card widget-flat">
+                                            <P class="h5  font-weight-normal mt-3 ml-3"> 동별 현재발전량 </P>
+                                            <div class="card-body" style="margin-top: -15px;">
+                                            <table class="table table-hover table-centered mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>1 발전소</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>벌크창고동</td>
+                                                            <td style="text-align: right;"><b class="h4 text-info"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>NCM동</td>
+                                                            <td style="text-align: right;"><b class="h4 text-info"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>IT필름2공장</td>
+                                                            <td style="text-align: right;"><b class="h4 text-info"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>토너동</td>
+                                                            <td style="text-align: right;"><b class="h4 text-info"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ShowRoom</td>
+                                                            <td style="text-align: right;"><b class="h4 text-info"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                                <table class="table table-hover table-centered mb-0 mt-0">
+                                                    <thead style="margin: -10px;">
+                                                        <tr>
+                                                            <th>2 발전소</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody >
+                                                        <tr>
+                                                            <td>LCO출하동</td>
+                                                            <td style="text-align: right;"><b class="h4 text-success"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>IT필름1공장</td>
+                                                            <td style="text-align: right;"><b class="h4 text-success"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>제품창고동</td>
+                                                            <td style="text-align: right;"><b class="h4 text-success"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>LCO동</td>
+                                                            <td style="text-align: right;"><b class="h4 text-success"> 3,251 </b> kW</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+                                    
+                                </div> <!-- end row -->
+
+                                <div class="row">
+                                    
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <h4 class="header-title m-3"> News </h4>
+                                            <div class="card-body">
+                                                
+                                                <div class="float-right" style="margin-top: -70px;">
+                                                    <i class="mdi mdi-alert-circle-outline widget-icon bg-success-lighten text-success"></i>
+                                                </div>
+        
+                                                <div class="mt-0 mb-2" data-simplebar style="max-height:300px;">
+                                                    <div class="timeline-alt pb-0">
+                                                        
+                                                        <div class="timeline-item">
+                                                            <i class="mdi mdi-alarm-light bg-danger-lighten text-danger timeline-icon"></i>
+                                                            <div class="timeline-item-info">
+                                                                <a href="#" class="text-danger font-weight-bold mb-1 d-block">Error ShowRoom #023  </a>
+                                                                <small></small>
+                                                                <p class="mb-0 pb-2">
+                                                                    <small class="text-muted">5 minutes ago</small>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="timeline-item">
+                                                            <i class="mdi mdi-alarm-light bg-danger-lighten text-danger timeline-icon"></i>
+                                                            <div class="timeline-item-info">
+                                                                <a href="#" class="text-danger font-weight-bold mb-1 d-block">Error 벌크창고동 #024 </a>
+                                                                <small></small>
+                                                                <p class="mb-0 pb-2">
+                                                                    <small class="text-muted">10 minutes ago</small>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+        
+                                                        
+                                                    </div>
+                                                    <!-- end timeline -->
+                                                </div> <!-- end slimscroll -->
+                                            </div>
+                                            <!-- end card-body -->
+                                        </div>
+                                        <!-- end card-->
+                                    </div> <!-- end col-->
+                                    <div class="col-lg-4">
+                                        <div class="card widget-flat">
+                                            <h4 class="header-title m-3">오늘의 날씨</h4>
+                                            <div class="card-body">
+                                                <div class="float-right"  style="margin-top: -70px;">
+                                                    <i class="mdi mdi-weather-cloudy widget-icon bg-success-lighten text-success"></i>
+                                                </div>
+                                                
+                                                <div class="row text-center mt-2 mb-3 py-2">
+                                                <div class="col-6">
+                                                    <i class="uil uil-temperature-empty text-primary mt-3 h3"></i>
+                                                    <h3 class="font-weight-normal">
+                                                        <span> 15 °C </span>
+                                                    </h3>
+                                                    <p class="text-muted mb-0">최저온도</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <i class="uil uil-temperature-three-quarter text-danger mt-3 h3"></i>
+                                                    <h3 class="font-weight-normal">
+                                                        <span>26 °C</span>
+                                                    </h3>
+                                                    <p class="text-muted mb-0">최고온도</p>
+                                                </div>
+                                               </div>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+
+                                    <div class="col-lg-4">
+                                        <div class="card widget-flat">
+                                            <h5 class="font-weight-normal header-title m-3" >태양광 산업소개</h5>
+                                            <div class="card-body">
+                                                <div class="float-right mb-0" style="margin-top: -70px;">
+                                                    <i class="mdi mdi-solar-power widget-icon bg-success-lighten text-success"></i>
+                                                </div>
+                                                <div class="solar_energy" style="height: 80px; background-color: black; margin-top: -20px;">
+                                                </div>
+                                                <p class="mt-1 mb-0">태양광 발전설비는 환경에너지인
+                                                    태양빛을 전기로전환하는 설비로
+                                                    써, 환경오염을걱정할 필요가 없
+                                                    는 친환경 에너지입니다.</p>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col-->
+
+                                    
+                                </div> <!-- end row -->
+
+                            </div> <!-- end col -->
+                            
+                        </div>
+                        <!-- end row -->
+
+
+                        
+                        
+                    </div> <!-- End Content -->
+
+                    <!-- Footer Start -->
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    © Cosmo - cosmoamt.com
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-md-right footer-links d-none d-md-block">
+                                        <a href="javascript: void(0);">main</a>
+                                        <a href="javascript: void(0);">Overview</a>
+                                        <a href="javascript: void(0);">Dashboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- end Footer -->
+
+                </div> <!-- content-page -->
+
+            </div> <!-- end wrapper-->
+        </div>
+        <!-- END Container -->
+
+        <div class="rightbar-overlay"></div>
+        <!-- /Right-bar -->
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/apexcharts.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.dashboard.js"></script>
+        <!-- end demo js-->
+        
+    </body>
+</html>

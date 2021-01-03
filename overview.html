@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> COSMO overview </title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app-modern-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+    <style>
+        body{
+            background-image: url('img/dashboard_back.jpg'); 
+            background-repeat: no-repeat;
+            background-size: 100%;            
+            background-position:top;
+            }
+    </style>
+</head>
+<body class="loading" data-layout="detached" data-layout-config='{"leftSidebarCondensed":true,"darkMode":true, "showRightSidebarOnStart": true}'>
+
+       <!-- Topbar Start -->
+       <div class="navbar-custom topnav-navbar topnav-navbar-dark">
+        <div class="container-fluid">
+
+            <!-- LOGO -->
+            <a href="http://www.cosmoamt.com" class="topnav-logo">
+                <span class="topnav-logo-lg">
+                    <img src="img/logo.jpg" height="70">
+                </span>
+                <span class="topnav-logo-sm">
+                    <img src="assets/images/logo_sm.png" alt="" height="16">
+                </span>
+            </a>
+            
+            <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" id="topbar-userdrop" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="account-user-avatar"> 
+                            <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                        </span>
+                        <span>
+                            <span class="account-user-name">COSMO</span>
+                            <span class="account-position">administer</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown" aria-labelledby="topbar-userdrop">
+                        <!-- item-->
+                        <div class=" dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome !</h6>
+                        </div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item" data-toggle="modal" data-target="#warning-alert-modal">
+                            <i class="mdi mdi-account-edit mr-1"></i>
+                            <span> A/S정보보기 </span>
+                        </a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item" data-toggle="modal" data-target="#warning-alert-modal">
+                            <i class="mdi mdi-account-edit mr-1"></i>
+                            <span> A/S정보입력하기 </span>
+                        </a>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="mdi mdi-logout mr-1"></i>
+                            <span>로그아웃</span>
+                        </a>
+
+                    </div>
+                </li>
+                
+            </ul>
+            
+            <ul class="list-unstyled topbar-right-menu float-right mt-4 text-white">
+                <li > <a class="h4 mr-3 ml-3 text-white" href="index.html">Main</a></li>
+                <li style="height: 34px; border-bottom: 4px solid #727cf5;"><a class="h4 mr-3 ml-3 text-white" href="overview.html">Overview</a></li>
+                <li ><a class="h4 mr-4 ml-3 text-white" href="dashboard_all.html">DashBoard</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+    <!-- end Topbar -->
+
+    <!-- Start Content-->
+    <div class="container-fluid">
+      
+        <div class="col-md-2">
+
+            <!-- Portlet card -->
+            <div class="card bg-primary text-white mt-2 mb-2" onclick="location.href='dashboard_su.html'">
+                <p class="h4 mt-3 ml-3"> 1 발전소</p>
+                <div class="card-body" style="margin-top:-15px; margin-bottom: -15px;">
+                    <table style="height:80px;"> 
+                        <tr>
+                            <td class="h5 ">금일발전량</td>
+                            <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                            <td >kW</td>
+                        </tr>
+                        <tr >
+                            <td class="h5 ">누적발전량</td>
+                            <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                            <td >kW</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> <!-- end card-->
+
+            <!-- Portlet card -->
+            <div class="card bg-success text-white mt-0 mb-2">
+                    <p class="h4 mt-3 ml-3">2 발전소</p>
+                    <div class="card-body"  style="margin-top:-15px; margin-bottom: -15px;" >
+                    <table style="height:80px;"> 
+                        <tr>
+                            <td class="h5 ">금일발전량</td>
+                            <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                            <td >kW</td>
+                        </tr>
+                        <tr >
+                            <td class="h5 ">누적발전량</td>
+                            <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                            <td >kW</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> <!-- end card-->
+        </div><!-- end col -->
+
+        <!-- 1발전소 -->
+
+        <div class="card border-secondary border" 
+             style="width:252px; height: 115px; position: absolute; top :120px;left : 1500px;"
+             onclick="location.href='dashboard_dong_1.html'">
+            <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-1-circle"></i></h2>
+        
+            <h4 class="m-2"> 토너동 </h4>
+            <div class="card-body" style="margin-top: -20px;">
+               <table style="height:40px;"> 
+                    <tr>
+                        <td>금일발전량</td>
+                        <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                    <tr >
+                        <td>누적발전량</td>
+                        <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+        
+        <div class="card border-secondary border" 
+            style="width:252px; height: 115px; position: absolute; top :290px;left :700px;"
+            onclick="location.href='dashboard_dong_1.html'">
+            <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-1-circle"></i></h2>
+        
+            <h4 class="m-2"> IT필름2공장 </h4>
+            <div class="card-body" style="margin-top: -20px;">
+                <table style="height:40px;"> 
+                    <tr>
+                        <td>금일발전량</td>
+                        <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                    <tr >
+                        <td>누적발전량</td>
+                        <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                </table>
+            
+            </div>
+        </div> 
+
+
+        <div class="card border-secondary border" 
+            style="width:252px; height: 115px; position: absolute; top :650px;left : 550px;"
+            onclick="location.href='dashboard_dong_1.html'">
+            <h3 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-1-circle"></i></h2>
+        
+            <h4 class="m-2">제품창고동 </h4>
+            <div class="card-body mr-0" style="margin-top:-20px;">
+                
+            <table style="height:40px;"> 
+                <tr>
+                    <td>금일발전량</td>
+                    <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                    <td >kW</td>
+                </tr>
+                <tr >
+                    <td>누적발전량</td>
+                    <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                    <td >kW</td>
+                </tr>
+            </table>
+            </div>
+        </div> 
+
+        <div class="card border-secondary border" 
+        style="width:252px; height: 115px; position: absolute; top :910px;left :820px;"
+        onclick="location.href='dashboard_dong_1.html'">
+            <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-1-circle"></i></h2>
+        
+            <h4 class="m-2"> NCM동</h4>
+            <div class="card-body" style="margin-top: -20px;">
+                <table style="height:40px;"> 
+                    <tr>
+                        <td>금일발전량</td>
+                        <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                    <tr >
+                        <td>누적발전량</td>
+                        <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                </table>
+                </div>
+        </div> 
+
+        <div class="card border-secondary border" 
+        style="width:252px; height: 115px; position: absolute; top :900px;left : 170px;"
+        onclick="location.href='dashboard_dong_1.html'">
+                  <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-1-circle"></i></h2>
+              
+            <h4 class="m-2">ShowRoom</h4>
+            <div class="card-body" style="margin-top: -20px;">
+                <table style="height:40px;"> 
+                    <tr>
+                        <td>금일발전량</td>
+                        <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                    <tr >
+                        <td>누적발전량</td>
+                        <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+
+        <!-- 2발전소 -->
+        
+        <div class="card border-secondary border" 
+        style="width:252px; height: 115px; position: absolute; top :400px;left :1400px;"
+        ]onclick="location.href='dashboard_dong_1.html'">
+            <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-2-circle"></i></h2>
+          
+          <h4 class="m-2"> 벌크창고동</h4>
+          <div class="card-body" style="margin-top: -20px;">
+            <table style="height:40px;"> 
+                <tr>
+                    <td>금일발전량</td>
+                    <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                    <td >kW</td>
+                </tr>
+                <tr >
+                    <td>누적발전량</td>
+                    <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                    <td >kW</td>
+                </tr>
+            </table>
+              </div>
+      </div> 
+  
+
+        <div class="card border-secondary border" 
+        style="width:252px; height: 115px; position: absolute; top :550px;left : 170px;"
+        onclick="location.href='dashboard_dong_1.html'">
+            <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-2-circle"></i></h2>
+        
+            <h4 class="m-2"> IT필름1공장 </h4>
+            <div class="card-body" style="margin-top: -20px;">
+                <table style="height:40px;"> 
+                    <tr>
+                        <td>금일발전량</td>
+                        <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                    <tr >
+                        <td>누적발전량</td>
+                        <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                </table>
+                </div>
+        </div> 
+    
+     
+        <div class="card border-secondary border" 
+        style="width:252px; height: 115px; position: absolute; top :630px;left :1150px;"
+        onclick="location.href='dashboard_dong_1.html'">
+            <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-2-circle"></i></h2>
+        
+            <h4 class="m-2"> LCO 출하동</h4>
+            <div class="card-body" style="margin-top: -20px;">
+                <table style="height:40px;"> 
+                    <tr>
+                        <td>금일발전량</td>
+                        <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                    <tr >
+                        <td>누적발전량</td>
+                        <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                </table>
+                </div>
+        </div> 
+        <div class="card border-secondary border" 
+        style="width:252px; height: 115px; position: absolute; top :800px;left :1100px;"
+        onclick="location.href='dashboard_dong_1.html'">
+            <h2 class="mt-1 float-right" style="position: absolute; right: 5px;"><i class="mdi mdi-numeric-2-circle"></i></h2>
+        
+            <h4 class="m-2"> LCO동</h4>
+            <div class="card-body" style="margin-top: -20px;">
+                
+                <table style="height:40px;"> 
+                    <tr>
+                        <td>금일발전량</td>
+                        <td class="h3 text-right"><span class="m-2">2,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                    <tr >
+                        <td>누적발전량</td>
+                        <td class="h3 text-right"><span class="m-2">32,278</span></td>
+                        <td >kW</td>
+                    </tr>
+                </table>
+                </div>
+        </div> 
+
+
+
+
+    </div><!-- end Content-->
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/apexcharts.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.dashboard.js"></script>
+        <!-- end demo js-->
+        
+</body>
+</html>
